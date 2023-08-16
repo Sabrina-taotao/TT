@@ -1,0 +1,25 @@
+public class SwitchDemo {
+    public static void main(String[] args) {
+        //理解穿透性的作用
+        String week = "周一";
+        switch (week){
+            case "周一":
+            case "周二":
+            case "周三":
+            case "周四":
+                System.out.println("咬牙坚持");
+                break;
+            case "周五":
+                System.out.println("准备happy");
+                break;
+            case "周六":
+                System.out.println("打游戏+看番");
+                break;
+            case "周日":
+                System.out.println("做好心里建设");
+                break;
+            default:
+                System.out.println("安心打工");
+        }
+    }
+}
